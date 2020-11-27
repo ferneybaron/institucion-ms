@@ -1,0 +1,23 @@
+server:
+  port: 8084
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9191/oauth/check_token
+    client:
+      client-id: institucion_ms
+      client-secret: pin
+spring:
+  jpa:
+    ##show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #default_schema: iesanmiar
+        #format_sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/institucion-db?ssl=false #db pruebas
+    #url: jdbc:postgresql://162.241.35.24:5432/colegio_pruebas?ssl=false #db produccuio
+    username: postgres
+    password: -&&?mMMwrXgr
